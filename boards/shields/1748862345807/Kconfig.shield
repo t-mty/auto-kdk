@@ -1,0 +1,4 @@
+config SHIELD_1748862345807_LEFT
+    def_bool $(shields_list_contains,1748862345807_left)
+config SHIELD_1748862345807_RIGHT
+    def_bool $(shields_list_contains,1748862345807_right)
