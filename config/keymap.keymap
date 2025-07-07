@@ -3,6 +3,18 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
+    behaviors {
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-input-two-axis";
+            label = "NEW_BEHAVIOR";
+            #binding-cells = <1>;
+            acceleration-exponent = <0>;
+            time-to-max-speed-ms = <0>;
+            y-input-code = <0>;
+            x-input-code = <0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
