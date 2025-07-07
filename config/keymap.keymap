@@ -70,5 +70,16 @@
         &trans  &trans  &trans  &trans  &trans  &trans                                                           &trans  &trans
             >;
         };
+
+        layer_scroll {
+            bindings = <
+                // このレイヤーがアクティブな場合、トラックボールの移動がスクロールとして解釈されます。
+                // ここには &trans を記述し、物理的なトラックボールの入力がZMKのポインティングモジュールに渡されるようにします。
+                &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans                                          &trans  &trans
+            >;
+        };
     };
 };
