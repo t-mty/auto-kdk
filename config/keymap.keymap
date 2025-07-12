@@ -79,11 +79,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans  &trans                                  &trans  &trans
             >;
-            trackball_scroll_listener: trackball_scroll_listener {
-                compatible = "zmk,input-listener";
-                device = <&trackball>;
-                input-processors = <&zip_scroll_scaler 1 1>;
-            };
         };
     };
 };
