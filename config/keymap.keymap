@@ -1,7 +1,29 @@
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 100 // マウス移動速度
+
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
+    behaviors {
+        // マウス移動のカスタム挙動
+
+        mouse_move_accel: mouse_move_accel {
+            compatible = "zmk,behavior-mouse-move";
+            label = "MOUSE_MOVE_ACCEL";
+            #binding-cells = <1>;
+
+            // 加速度の設定
+
+            time-to-max-speed-ms = <0>;  // 例: 100ミリ秒で最大速度に到達
+            acceleration-exponent = <0>; // 例: 線形に近い加速 (0.0 ～ 2.0 程度で調整)
+            // 移動方向の設定（キーマップで参照する際に指定）
+
+            x-input-code = <0>; // X軸移動のHIDコード (ZMKが自動的に設定)
+            y-input-code = <0>; // Y軸移動のHIDコード (ZMKが自動的に設定)
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
