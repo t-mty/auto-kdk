@@ -4,6 +4,10 @@
 #include <dt-bindings/zmk/input_transform.h>
 #include "layouts.dtsi"
 
+&trackball {
+    scroll-layers = <5>;
+};
+
 / {
     chosen {
         zmk,physical-layout = &physical_layout0;
