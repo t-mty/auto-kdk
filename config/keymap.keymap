@@ -57,15 +57,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans  &trans                                  &trans  &trans
             >;
-            trackball_scroll_listener: trackball_scroll_listener {
-                compatible = "zmk,input-listener";
-                device = <&trackball>;
-                // 動きをスクロールに変換するプロセッサを設定
-                input-processors = <
-                    &zip_xy_to_scroll, // X/Yの動きをスクロールイベントに変換
-                    &zip_scroll_scaler 1 1 // スクロール量を調整 (例: 1倍スケール)
-                >;
-            };
         };
     };
 };
