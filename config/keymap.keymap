@@ -39,10 +39,10 @@
 
         layer_1 {
             bindings = <
-&kp LC(LS(T))  &kp LC(W)     &kp LC(T)   &kp LC(LS(TAB))     &kp LC(TAB)     &none                    &kp LC(X)  &kp LA(LEFT)  &mkp MCLK       &kp LA(RIGHT)  &kp LG(LS(S))  &kp DELETE
-&kp TAB        &kp LC(A)     &kp LC(S)   &kp LS(LEFT_SHIFT)  &kp LEFT_SHIFT  &kp LCTRL                &kp LC(C)  &mkp LCLK     &kp UP_ARROW    &mkp RCLK      &none          &kp BACKSPACE
-&kp LC(LS(Z))  &kp LC(Z)     &none       &none               &none           &none      &kp LG(V)     &kp LC(V)  &kp LEFT      &kp DOWN_ARROW  &kp RIGHT      &none          &kp ENTER
-               &kp LEFT_WIN  &bt BT_CLR  &none               &none           &none      &kp CAPSLOCK                                                          &kp LC(MINUS)  &kp LC(EQUAL)
+&kp LC(LS(T))  &kp LC(W)     &kp LC(T)   &kp LC(LS(TAB))  &kp LC(TAB)     &none                    &kp LC(X)  &kp LA(LEFT)  &mkp MCLK       &kp LA(RIGHT)  &kp LG(LS(S))  &kp DELETE
+&kp TAB        &kp LC(A)     &kp LC(S)   &mo 5            &kp LEFT_SHIFT  &kp LCTRL                &kp LC(C)  &mkp LCLK     &kp UP_ARROW    &mkp RCLK      &none          &kp BACKSPACE
+&kp LC(LS(Z))  &kp LC(Z)     &none       &none            &none           &none      &kp LG(V)     &kp LC(V)  &kp LEFT      &kp DOWN_ARROW  &kp RIGHT      &none          &kp ENTER
+               &kp LEFT_WIN  &bt BT_CLR  &none            &none           &none      &kp CAPSLOCK                                                          &kp LC(MINUS)  &kp LC(EQUAL)
             >;
         };
 
