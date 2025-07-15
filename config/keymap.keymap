@@ -30,28 +30,28 @@
 
         layer_1 {
             bindings = <
-&kp LC(LS(T))  &kp LC(W)     &kp LC(T)   &kp LC(LS(TAB))  &kp LC(TAB)     &none                    &kp LC(X)  &kp LA(LEFT)    &mkp MCLK       &kp LA(RIGHT)  &none          &kp DELETE
-&kp TAB        &kp LC(A)     &kp LC(S)   &mo 5            &kp LEFT_SHIFT  &kp LCTRL                &kp LC(C)  &mkp LCLK       &kp UP_ARROW    &mkp RCLK      &none          &kp BACKSPACE
-&kp LC(LS(Z))  &kp LC(Z)     &none       &none            &none           &none      &kp LG(V)     &kp LC(V)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &none          &kp ENTER
-               &kp LEFT_WIN  &bt BT_CLR  &none            &none           &none      &kp CAPSLOCK                                                            &kp LC(MINUS)  &kp LC(EQUAL)
+&kp LC(LS(T))  &kp LC(W)     &kp LC(T)   &kp LC(LS(TAB))  &kp LC(TAB)     &kp LG(LS(S))                     &kp LC(X)  &kp LA(LEFT)    &mkp MCLK       &kp LA(RIGHT)  &none          &kp DELETE
+&kp TAB        &kp LC(A)     &kp LC(S)   &mo 5            &kp LEFT_SHIFT  &kp LCTRL                         &kp LC(C)  &mkp LCLK       &kp UP_ARROW    &mkp RCLK      &trans         &kp BACKSPACE
+&kp LC(LS(Z))  &kp LC(Z)     &none       &none            &none           &kp LC(LEFT_SHIFT)  &kp LG(V)     &kp LC(V)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &trans         &kp ENTER
+               &kp LEFT_WIN  &bt BT_CLR  &none            &none           &none               &kp CAPSLOCK                                                            &kp LC(MINUS)  &kp LC(EQUAL)
             >;
         };
 
         layer_2 {
             bindings = <
-&none    &none  &none  &none  &none           &none                      &kp LS(NUMBER_9)  &kp LS(NUMBER_0)   &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp DELETE
-&kp TAB  &none  &none  &none  &kp LEFT_SHIFT  &none                      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &kp BACKSPACE
-&none    &none  &none  &none  &none           &none           &kp GRAVE  &kp SEMICOLON     &kp SQT            &kp LS(N7)        &kp LS(N8)        &kp LS(N9)        &kp ENTER
-         &none  &none  &none  &kp SPACE       &kp LEFT_SHIFT  &kp CAPS                                                                            &kp LS(N0)        &kp NON_US_BACKSLASH
+&none    &none  &none  &none  &none           &none                            &kp LS(NUMBER_9)  &kp LS(NUMBER_0)   &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp DELETE
+&kp TAB  &none  &none  &none  &kp LEFT_SHIFT  &none                            &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &kp BACKSPACE
+&none    &none  &none  &none  &none           &none           &kp EXCLAMATION  &kp SEMICOLON     &kp SQT            &kp LS(N7)        &kp LS(N8)        &kp SLASH         &kp ENTER
+         &none  &none  &none  &kp SPACE       &kp LEFT_SHIFT  &kp CAPS                                                                                  &kp GRAVE         &kp NON_US_BACKSLASH
             >;
         };
 
         layer_3 {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4   &kp F5     &kp F6                        &none         &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DEL
-&kp F7  &kp F8  &kp F9  &kp F10  &kp F11    &kp F12                       &kp ASTERISK  &kp PLUS   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp BACKSPACE
-&none   &none   &none   &none    &none      &none           &none         &kp SLASH     &kp MINUS  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ENTER
-        &none   &none   &none    &kp SPACE  &kp LEFT_SHIFT  &kp CAPSLOCK                                                       &kp NUMBER_0  &kp PERIOD
+&kp F1  &kp F2  &kp F3  &kp F4   &kp F5     &kp F6                           &none         &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0
+&none   &none   &none   &none    &none      &none                            &kp ASTERISK  &kp PLUS   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp BACKSPACE
+&kp F7  &kp F8  &kp F9  &kp F10  &kp F11    &kp F12         &kp EXCLAMATION  &kp SLASH     &kp MINUS  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ENTER
+        &none   &none   &none    &kp SPACE  &kp LEFT_SHIFT  &kp CAPSLOCK                                                          &kp NUMBER_0  &kp PERIOD
             >;
         };
 
