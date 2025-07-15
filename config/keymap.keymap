@@ -33,7 +33,7 @@
 &kp LC(LS(T))  &kp LC(W)     &kp LC(T)   &kp LC(LS(TAB))  &kp LC(TAB)     &kp LG(LS(S))                     &kp LC(X)  &kp LA(LEFT)    &mkp MCLK       &kp LA(RIGHT)  &none          &kp DELETE
 &kp TAB        &kp LC(A)     &kp LC(S)   &mo 5            &kp LEFT_SHIFT  &kp LCTRL                         &kp LC(C)  &mkp LCLK       &kp UP_ARROW    &mkp RCLK      &trans         &kp BACKSPACE
 &kp LC(LS(Z))  &kp LC(Z)     &none       &none            &none           &kp LC(LEFT_SHIFT)  &kp LG(V)     &kp LC(V)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &trans         &kp ENTER
-               &kp LEFT_WIN  &bt BT_CLR  &none            &none           &none               &kp CAPSLOCK                                                            &kp LC(MINUS)  &kp LC(EQUAL)
+               &kp LEFT_WIN  &bt BT_CLR  &kp LEFT_ALT     &none           &kp LEFT_SHIFT      &kp CAPSLOCK                                                            &kp LC(MINUS)  &kp LC(EQUAL)
             >;
         };
 
