@@ -6,20 +6,15 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
-    //    behaviors {
-    // マウス移動のカスタム挙動
-    //        mouse_move_accel: mouse_move_accel {
-    //            compatible = "zmk,behavior-mouse-move";
-    //            label = "MOUSE_MOVE_ACCEL";
-    //            #binding-cells = <1>;
-    // 加速度の設定
-    //            time-to-max-speed-ms = <0>;  // 例: 100ミリ秒で最大速度に到達
-    //            acceleration-exponent = <0>; // 例: 線形に近い加速 (0.0 ～ 2.0 程度で調整)
-    // 移動方向の設定（キーマップで参照する際に指定）
-    //            x-input-code = <0>; // X軸移動のHIDコード (ZMKが自動的に設定)
-    //            y-input-code = <0>; // Y軸移動のHIDコード (ZMKが自動的に設定)
-    //        };
-    //    };
+    behaviors {
+        mouse_scrl: mouse_wheel_scrl {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
+            bindings = <&msc>, <&msc>;
+
+            tap-ms = <10>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -76,6 +71,9 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans  &trans                                  &trans  &trans
             >;
+            sensor-bindings =
+                <&mouse_scrl SCRL_DOWN SCRL_UP>,
+                <&mouse_scrl SCRL_UP SCRL_DOWN>;
         };
     };
 };
